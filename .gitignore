@@ -1,28 +1,75 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# ==========================================
+# Configuración Global y Editores
+# ==========================================
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file
-TestResults.xml
-#agentes
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+
+# ==========================================
+# Entorno Local y Secretos (¡Crítico!)
+# ==========================================
+.env
+.env.local
+.env.*.local
+ backend/.env
+!backend/.env.example
+
+# ==========================================
+# Base de Datos y Docker
+# ==========================================
+# Archivos de datos locales o dumps de base de datos
+*.sql
+*.sqlite
+/pgdata/
+
+# ==========================================
+# Backend (Python / FastAPI / Alembic)
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+venv/
+.venv/
+env/
+lib/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==========================================
+# Frontend (Flutter / Dart)
+# ==========================================
+# Archivos e historiales de compilación
+build/
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+/frontend/.flutter-plugins
+/frontend/.flutter-plugins-dependencies
+/frontend/.metadata
+
+# Excluir directorios nativos si no vas a tocarlos, o sus compilaciones internas
+/frontend/android/
+/frontend/ios/
+/frontend/web/
+/frontend/linux/
+/frontend/macos/
+/frontend/windows/
+
+# Ejecutables de Flutter nativo en Linux
+/frontend/linux/flutter/ephemeral/
+
+# ==========================================
+# Herramientas de Contexto e IA (Repomix / Agents)
+# ==========================================
+repomix-output.xml
 .agents/
 AGENTS.md
-#.env
-.env
