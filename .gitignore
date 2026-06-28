@@ -73,3 +73,11 @@ build/
 repomix-output.xml
 .agents/
 AGENTS.md
+
+# ==========================================
+# Comandos 
+# ==========================================
+coman.txt
+
+## Docker compose
+docker-compose.yml
